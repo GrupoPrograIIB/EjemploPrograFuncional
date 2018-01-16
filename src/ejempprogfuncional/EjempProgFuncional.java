@@ -22,21 +22,14 @@ public class EjempProgFuncional {
     public static void main(String[] args) throws IOException {
         
         // Creo el archivo temporal
-        File f = File.createTempFile("Lista", ".txt");
+        File f = new File("Progra.rtf");
         
-        // creo una colección de lineas que voy a escribir en él.
-        List<String> lineas = Arrays.asList("Joel", "Luis", "Camila", "Jonnathan");
-        FileWriter fw = new FileWriter(f);
-        for (String linea : lineas) {
-            fw.append(linea + "\n");
-        }
-        fw.close();
-
         // Lectura con el Stream API y utilizando expresiones lambda
         Stream<String> lambdaStream = Files.lines(f.toPath());
         lambdaStream.forEach(s -> System.out.println(s));
         lambdaStream.close();
-
+        
+        f.delete();
     }
 
 }
