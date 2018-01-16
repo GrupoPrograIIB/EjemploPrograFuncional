@@ -1,0 +1,178 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang12298{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset0 Times New Roman;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red255\green255\blue255;\red0\green0\blue255;\red0\green0\blue0;\red253\green253\blue253;\red68\green68\blue68;}
+{\*\listtable 
+{\list\listhybrid
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx0}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'01.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'02.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc3\leveljc0\levelstartat1{\leveltext\'02\'03.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc2\leveljc0\levelstartat1{\leveltext\'02\'04.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc1\leveljc0\levelstartat1{\leveltext\'02\'05.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'06.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'07.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc23\leveljc1\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx900}\listid1 }
+{\list\listhybrid
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'00.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx900}\listid2 }
+{\list\listhybrid
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx0}
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx900}\listid3 }
+{\list\listhybrid
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'00.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx900}\listid4 }
+{\list\listhybrid
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'00.;}{\levelnumbers\'01;}\jclisttab\tx900}
+{\listlevel\levelnfc23\leveljc0\levelstartat1{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx900}\listid5 }}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\widctlpar\sa160\sl276\slmult1\qc\b\f0\fs24 RESUMEN\par
+
+\pard\widctlpar\sa160\sl276\slmult1\qj\b0 El presente trabajo est\'e1 enfocado en  brindar una introducci\'f3n clara en Programaci\'f3n funcional y acercarnos a las funcionalidades de Java Streams y Lambdas.\par
+Se expondr\'e1n conceptos b\'e1sicos, los cuales permitir\'e1n comprender de mejor forma cuales son las bases que presiden a este tipo de programaci\'f3n. \par
+Explicaremos la metodolog\'eda que se ha utilizado para crear nuestro propio programa empleando las nociones  de la programaci\'f3n funcional. En consecuencia  se ofrecer\'e1 una secci\'f3n de resultados en la que se exhibir\'e1 el funcionamiento del programa y una secci\'f3n de discusi\'f3n en la cual se mostrara  tanto las ventajas como las desventajas de la programaci\'f3n funcional.   \par
+
+\pard\widctlpar\sa160\sl276\slmult1\qc\b INTRODUCCION\par
+
+\pard\sa200\sl276\slmult1\qj\highlight1\b0\lang1034 La programaci\'f3n funcional tienes sus or\'edgenes en el a\'f1o de 1930  con el desarrollo del c\'e1lculo lambda que es un sistema formal dise\'f1ado para investigar la definici\'f3n de funci\'f3n, la noci\'f3n de aplicaci\'f3n de funciones y la recursi\'f3n.\par
+
+\pard\widctlpar\sa160\sl276\slmult1\qj\highlight0 La programaci\'f3n funcional apareci\'f3 como un paradigma independiente a principio de los sesenta. \par
+Su creaci\'f3n es debido a las necesidades de los investigadores en el campo de la inteligencia artificial y en sus campos secundarios del c\'e1lculo simb\'f3lico, pruebas de teoremas, sistemas basados en reglas y procesamiento del lenguaje natural. Todas estas  necesidades no estaban cubiertas por los lenguajes imperativos de la \'e9poca\par
+La caracter\'edstica principal de la programaci\'f3n funcional es que los c\'e1lculos se ven como una funci\'f3n matem\'e1tica que hacen corresponder entradas y salidas.\par
+No hay noci\'f3n de posici\'f3n de memoria y por tanto, necesidad de una instrucci\'f3n de asignaci\'f3n.\par
+\highlight1\lang12298 Como la programaci\'f3n funcional est\'e1 desarrollada por funciones matem\'e1ticas, la funci\'f3n es la unidad b\'e1sica. Variables, datos, expresiones, etc. todas  son funciones.\par
+Las variables no tienen estado, son inmutables, es decir, no cambian sus valores a lo largo de la ejecuci\'f3n del programa. Se asigna su valor una vez, y no vuelven a cambiar. \par
+Se lo ha llamado variable, pero realmente no tiene sentido llamarlas asi. Son realmente s\'edmbolos, accesos a expresiones .No existen bucles o estructuras (for, while...) ya que se trabaja con recursividad.\par
+\highlight0 La programaci\'f3n funcional puede ayudarnos a crear software m\'e1s robusto, mantenible y f\'e1cil de testear. \par
+\b Caracter\'edsticas de la programaci\'f3n funcional\par
+\b0\lang1034 Entre las caracter\'edsticas trascendentales de la programaci\'f3n funcional tenemos:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\qj\b Funciones puras:\b0\~Todas las funciones que se han delimitado  no deben tener\~{{\field{\*\fldinst{HYPERLINK "https://es.wikipedia.org/wiki/Efecto_secundario_(inform%C3%A1tica)"}}{\fldrslt{\ul\cf2\cf3 efectos de lado}}}}\f0\fs24 , es decir, no deben modificar  nada de su entorno, \'fanicamente deben acoger par\'e1metros y devolver valores. Gracias a esta peculiaridad, dada una funci\'f3n a la que le asignemos  un valor de entrada, siempre nos devolver\'e1 el mismo valor de salida. \par
+{\pntext\f2\'B7\tab}\b Inmutabilidad:\b0\~Los valores definidos no pueden ser reformadas solo pueden hacerse copias de los mismos modificados. Esta caracter\'edstica resuelve el problema de pasar variables por referencia y que las funciones cambien valores haciendo que el c\'f3digo no haga lo que debe.\par
+{\pntext\f2\'B7\tab}\b Funciones de orden superior:\b0\~Las funciones son de primera clase y como tales se pueden usar como par\'e1metros de entrada en otras funciones e incluso como resultado de funciones. \par
+
+\pard\widctlpar\sa160\sl276\slmult1\qj\par
+
+\pard\widctlpar\sa160\sl276\slmult1\qj\lang12298 Se ha empezado a o\'edr hablar de lenguajes de programaci\'f3n funcional como Scala, Haskell o Lisp, pero lo que pocos saben es  que Java en su versi\'f3n 8 permite usar la potencia de la programaci\'f3n funcional sin abandonar su orientaci\'f3n a objetos.\par
+\highlight1\lang1034 Java 8 nos abre la puerta a la programaci\'f3n funcional con las\~\b expresiones lambda\b0 , tambi\'e9n llamadas funciones an\'f3nimas, y la API Stream. \par
+\cf3 Con la adici\'f3n de expresiones lambda podemos crear c\'f3digo m\'e1s conciso y significativo, adem\'e1s de abrir la puerta hacia la programaci\'f3n funcional en Java, en donde las funciones juegan un papel fundamental. Por otro lado, la API Stream nos permite realizar operaciones de tipo filtro/mapeo/reducci\'f3n sobre colecciones de datos de forma secuencial o paralela y que su implementaci\'f3n sea transparente para el desarrollador. Lambdas y Stream son una combinaci\'f3n muy poderosa que requiere un cambio de paradigma en la forma en la que se ha  escrito c\'f3digo Java hasta el momento.\par
+\cf0\b Expresi\'f3n lambda\par
+\cf3\b0 Las expresiones lambda son funciones an\'f3nimas, es decir, funciones que no necesitan una clase.\par
+Su sintaxis b\'e1sica se detalla a continuaci\'f3n:\par
+
+\pard\widctlpar\sa160\sl276\slmult1\qj\cf0\highlight0 (par\'e1metro)->(cuerpo-lambda)\par
+
+\pard\cbpat1\widctlpar\sl276\slmult1\qj\cf3\lang12298 El operador lambda (->) separa la declaraci\'f3n de par\'e1metros de la declaraci\'f3n del cuerpo de la funci\'f3n.\par
+
+\pard\cbpat1 
+{\listtext\f0\u10625?\tab}\ls1\widctlpar\fi-360\li720\sl276\slmult1\qj\b Par\'e1metros:\b0\par
+
+\pard\cbpat1 
+{\listtext\f0\u10625?\tab}\jclisttab\tx900\ls1\ilvl8\widctlpar\fi-360\li900\sl276\slmult1\qj Cuando se tiene un solo par\'e1metro no es necesario utilizar los par\'e9ntesis.\par
+
+\pard\cbpat1 
+{\listtext\f0\u10625?\tab}\jclisttab\tx900\ls2\ilvl1\widctlpar\fi-360\li900\sl276\slmult1\qj Cuando no se tienen par\'e1metros, o cuando se tienen dos o m\'e1s, es necesario utilizar par\'e9ntesis.\par
+
+\pard\cbpat1 
+{\listtext\f0\u10625?\tab}\ls3\widctlpar\fi-360\li720\sl276\slmult1\qj\b Cuerpo de lambda:\b0\par
+
+\pard\cbpat1 
+{\listtext\f0\u10625?\tab}\jclisttab\tx900\ls3\ilvl1\widctlpar\fi-360\li900\sl276\slmult1\qj Cuando el cuerpo de la expresi\'f3n lambda tiene una \'fanica l\'ednea no es necesario utilizar las llaves y no necesitan especificar la cl\'e1usula return en el caso de que deban devolver valores.\par
+{\listtext\f0 1\tab}Cuando el cuerpo de la expresi\'f3n lambda tiene m\'e1s de una l\'ednea se hace necesario utilizar las llaves y es necesario incluir la cl\'e1usula return en el caso de que la funci\'f3n deba devolver un valor. \par
+
+\pard\cbpat1\widctlpar\sa300\sl276\slmult1\qj Como se ha observado  las expresiones lambda son funciones an\'f3nimas y pueden ser utilizadas en una interfaz funcional pero, \'bfqu\'e9 es una interfaz funcional?\par
+Una interfaz funcional es una interfaz con uno y solo un m\'e9todo abstracto. La declaraci\'f3n es exactamente igual que las interfaces normales con dos caracter\'edsticas adicionales:\par
+
+\pard\cbpat1{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent630{\pntxtb\'B7}}\widctlpar\fi-360\li450\sl276\slmult1\qj Tiene un \'fanico m\'e9todo abstracto.\par
+{\pntext\f2\'B7\tab}De manera opcional puede estar anotada como\~@FunctionalInterface.\par
+
+\pard\cbpat1\widctlpar\sa300\sl276\slmult1\qj El motivo de que la interfaz tenga un \'fanico m\'e9todo abstracto es que ser\'e1 la expresi\'f3n lambda la que proveer\'e1 de la implementaci\'f3n para dicho m\'e9todo.\par
+\par
+\b Clasificaci\'f3n de las expresiones Lambda\b0  \par
+
+\pard\cbpat1{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent630{\pntxtb\'B7}}\widctlpar\fi-360\li450\sl276\slmult1\qj\b Consumidores.\b0\par
+
+\pard\cbpat1\widctlpar\sa300\sl276\slmult1\qj Se trata de aquellas expresiones lambda que aceptan un solo valor y no devuelven valor alguno.\par
+        \tab\tab     \b\lang1033 String message -> System.out.println(message);\par
+\b0\lang12298 Las expresiones BiConsumidoras, un caso especial de las expresiones consumidoras, son aquellas que toman dos valores como par\'e1metro y no devuelven resultado.\par
+\cf0\highlight4\b\fs23\lang1033  (String key, String value) -> System.out.println("Key: %s, value: %s%n", key, value);\cf3\highlight0\par
+
+\pard\cbpat1{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent630{\pntxtb\'B7}}\widctlpar\fi-360\li450\sl276\slmult1\qj\fs24\lang12298 Proveedores.\b0\par
+
+\pard\cbpat1\widctlpar\sa300\sl276\slmult1\qj\cf0 En este caso se trata de expresiones que no tienen par\'e1metros pero devuelven un resultado.\cf5\par
+\cf3\b\tab\tab\tab () -> return createRandomInteger()\cf5\b0\par
+
+\pard\cbpat1{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent630{\pntxtb\'B7}}\widctlpar\fi-360\li450\sl276\slmult1\qj\cf3\b Funciones.\b0\par
+
+\pard\cbpat1\widctlpar\sa300\sl276\slmult1\qj\cf0 Aquellas expresiones que aceptan un argumento y devuelven un valor como resultado y cuyos tipos no tienen por qu\'e9 ser iguales.\cf5\par
+\cf3\b\tab      Order persistedOrder -> persistedOrder.getIdientifier();\cf5\par
+\cf0\b0 Las BiFunciones son aquellas expresiones de tipo funci\'f3n que aceptan dos argumentos y devuelven un resultado.\cf5\par
+\cf3\b\lang1033\tab        (Address address, String name) -> new Person(name, address);\cf5\par
+
+\pard\cbpat1\widctlpar\li450\sl276\slmult1\qj\cf3\b0\par
+
+\pard\cbpat1 
+{\listtext\f0\u10625?\tab}\jclisttab\tx900\ls4\ilvl1\widctlpar\fi-360\li900\sl276\slmult1\qj\i\lang12298 Operadores Unarios.\par
+
+\pard\cbpat1\widctlpar\li900\sl276\slmult1\qj\i0 Caso especial de funciones en las que tanto el par\'e1metro como el valor devuelto son del mismo tipo.\par
+\b\tab\tab String message -> message.toLowerCase()\par
+\b0\par
+
+\pard\cbpat1 
+{\listtext\f0\u10625?\tab}\jclisttab\tx900\ls5\ilvl1\widctlpar\fi-360\li900\sl276\slmult1\qj\i Operadores Binarios.\par
+
+\pard\cbpat1\widctlpar\li900\sl276\slmult1\qj\i0 Igual que en el caso de los Operadores Unarios, se trata de un caso especial de funciones en las que los dos argumentos y el resultado son del mismo tipo.\par
+
+\pard\cbpat1\widctlpar\li900\sl276\slmult1\b\fs23\lang1033 (String message, String anotherMesssage) ->message.concat(anotherMessage); \par
+
+\pard\cbpat1\widctlpar\li900\sl276\slmult1\qj\b0\fs24\par
+
+\pard\cbpat1{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent630{\pntxtb\'B7}}\widctlpar\fi-360\li450\sl276\slmult1\qj\b\lang12298 Predicados.\b0\par
+
+\pard\cbpat1\widctlpar\li450\sl276\slmult1\qj Se trata de expresiones que aceptan un par\'e1metro y devuelven un valor l\'f3gico.\par
+\b\tab\tab\tab String message -> message.length > 50 \par
+\b0\par
+Como en los casos anteriores, se pueden tener BiPredicados, predicados que en lugar de tener un par\'e1metro, tienen dos.\par
+
+\pard\widctlpar\li360\sb180\sa180\sl276\slmult1\b\lang1033\tab (path, attr) -> String.valueOf(path).endsWith(".js") && attr.size() > 1024 \par
+\par
+
+\pard\widctlpar\sa160\sl360\slmult1\qj\cf0\highlight1\f1\lang1034 Expresion Stream\par
+\highlight0\b0\lang12298 Este nuevo API provee utilidades para para permitir operaciones "estilo programaci\'f3n funcional" sobre flujo de valores. La forma m\'e1s simple de obtener un Stream seguramente sea a partir de una colecci\'f3n:\par
+\b\lang1033\tab\tab\tab Stream<T> stream = collection.stream(); \par
+\b0\lang12298 Los stream son parecidos a los iteradores. Los valores van "fluyendo" (piensen en el agua que fluye en una canilla abierta), y se van. Los stream s\'f3lo pueden recorrerse 1 vez. Los stream tambi\'e9n pueden ser infinitos.\par
+M\'e1s interesante es que los stream pueden ser secuenciales o paralelos, caracter\'edstica que puede cambiarse usando los m\'e9todos stream.sequential() o stream.parallel(). Las acciones en un stream secuencial ocurren de forma secuencial en un \'fanico thread. En cambio, las acciones sobre un stream paralelo pueden ocurrir todas a la vez en m\'faltiples threads.\par
+Un ejemplo m\'e1s concreto de uso de streams:\par
+\b\lang1033 int sumOfWeights = blocks.stream().filter(b -> b.getColor() == RED)\par
+                                  .mapToInt(b -> b.getWeight())\par
+                                  .sum();\par
+\b0\lang12298 Los stream tienen un API fluido que permite encadenar invocaciones. Hay dos tipos de invocaciones: "intermedias" y "finales". Las invocaciones intermedias permiten continuar con el flujo de las operaciones, mientras que las operaciones terminales "consumen" al stream y se tienen que invocar para finalizar la operaci\'f3n. sum() es una operaci\'f3n terminal.\par
+En general, el uso de streams involucra:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl360\slmult1\qj Obtener un stream.\par
+{\pntext\f2\'B7\tab}Realizar una o m\'e1s operaciones intermedias.\par
+{\pntext\f2\'B7\tab}Realizar una operaci\'f3n final.\par
+{\pntext\f2\'B7\tab}Las operaciones intermedias no se ejecutan de forma inmediata, adem\'e1s la operaci\'f3n final es quien desencadena el procesamiento de los elementos del stream.\par
+
+\pard\widctlpar\li360\sb180\sa180\sl276\slmult1\cf3\b\f0\lang1033\par
+
+\pard\cbpat1\widctlpar\sa300\sl360\slmult1\qc\lang12298 RESULTADOS\par
+
+\pard\widctlpar\sa160\sl360\slmult1\qj\cf0\b0\f1 Luego de haber realizado la ejecuci\'f3n del proyecto se obtiene como resultado que el tiempo de respuesta es menor en comparaci\'f3n con el c\'f3digo que se utilizaba anteriormente.\par
+Tambi\'e9n se puede observar que se reduce en gran medida el tiempo de desarrollo y las l\'edneas de c\'f3digo, ayudando a que el proyecto sea m\'e1s \'f3ptimo.\par
+\par
+
+\pard\widctlpar\sa160\sl360\slmult1\qc\b DISCUSI\'d3N\b0  \par
+
+\pard\widctlpar\sa160\sl360\slmult1\qj Despu\'e9s de realizar la ejecuci\'f3n del proyecto se ha obtenido que el tiempo de respuesta es menor en comparaci\'f3n con el c\'f3digo que se utilizaba anteriormente, esto se debe a que en la programaci\'f3n funcional en Java 8, usamos declaraciones Lambda, donde no se modifica el estado del programa; las variables de entrada permanecen sin cambios y el resultado es siempre una nueva variable. Por ello, ser\'eda muy importante implementar a nuestro c\'f3digo este nuevo paradigma porque el programa puede ser m\'e1s flexible.\par
+Tambi\'e9n se puede observar que se reduce en gran medida el tiempo de desarrollo y las l\'edneas de c\'f3digo, ayudando a que el proyecto sea m\'e1s \'f3ptimo; ya que este nuevo paradigma usa declaraciones en donde cada implementaci\'f3n utilizada, el c\'f3digo no es visible, permitiendo que tanto el tiempo de desarrollo y las l\'edneas de c\'f3digo sea menor en comparaci\'f3n a la programaci\'f3n que manejaba Java en sus versiones anteriores. Adem\'e1s, en la revisi\'f3n de literatura, la mayor\'eda de los autores concuerda que la programaci\'f3n funcional es \'fatil porque las operaciones son m\'e1s claras y concisas, lo que hace que el c\'f3digo se m\'e1s f\'e1cil de entender; aunque para algunos les gusta las expresiones Lambda en operaciones peque\'f1as y no en c\'f3digo complejo. Entonces la implementaci\'f3n de este paradigma en el c\'f3digo depende de cada desarrollador porque solo de ellos depende el \'e9xito de su proyecto.\par
+En conclusi\'f3n, al escribir este art\'edculo y desarrollar ejemplos, la programaci\'f3n funcional es muy \'fatil al momento de escribir c\'f3digo, porque es declarativa, o sea que en ella definimos cu\'e1l es el problema y no como queremos resolver un problema; siendo mas clara de entender para otras personas, ayud\'e1ndonos hacer un c\'f3digo m\'e1s robusto y limpio.\par
+
+\pard\cbpat1\widctlpar\sa300\sl360\slmult1\qc\cf3\f0\par
+
+\pard\cbpat1\widctlpar\sl360\slmult1\qj\par
+
+\pard\widctlpar\sa160\sl360\slmult1\qj\cf0\lang1034\par
+
+\pard\sa200\sl276\slmult1\qj\lang10\par
+}
+ 
